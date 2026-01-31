@@ -15,7 +15,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Foto del Developer - Izquierda */}
             <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-                <div className="w-64 lg:w-80 aspect-[414/500] rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow">
+                <div className="w-64 lg:w-80 aspect-[414/500] rounded-2xl overflow-hidden shadow-2xl hover:shadow-2xl transition-shadow">
                     <img
                         src={`/img/perfil.png`}
                         alt="Foto del developer"
