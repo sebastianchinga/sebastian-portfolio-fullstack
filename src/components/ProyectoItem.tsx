@@ -23,15 +23,14 @@ export default function ProyectoItem({proyecto}: ProyectoItemProp) {
                 </h3>
                 {/* Descripcion */}
                 <p className="text-gray-600 text-sm mb-4 project-description">
-                    Plataforma de análisis de datos en tiempo real con visualización de
-                    métricas personalizadas y reportes automáticos.
+                    {proyecto.descripcion}
                 </p>
                 {/* Grupo de botones */}
                 <div className="flex gap-3">
-                    <Link to={'/'} className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg text-center transition-colors">
+                    <Link target="_blank" to={`${proyecto.repositorio}`} className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg text-center transition-colors">
                         Ver Repo
                     </Link>
-                    <Link to={'/'} className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-2 px-4 rounded-lg text-center transition-colors">
+                    <Link target="_blank" to={`${proyecto.url}`} className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-50 font-medium py-2 px-4 rounded-lg text-center transition-colors">
                         Ver Proyecto
                     </Link>
                 </div>
