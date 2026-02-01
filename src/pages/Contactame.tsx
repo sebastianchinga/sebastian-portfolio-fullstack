@@ -35,7 +35,7 @@ export default function Contactame() {
                         href="mailto:tu@email.com"
                         className="text-blue-600 hover:text-blue-700 font-semibold"
                     >
-                        tu@email.com
+                        jchingapalacios05@gmail.com
                     </a>
                 </div>
                 {/* Tarjeta de Teléfono */}
@@ -61,7 +61,7 @@ export default function Contactame() {
                         href="tel:+1234567890"
                         className="text-blue-600 hover:text-blue-700 font-semibold"
                     >
-                        +1 (234) 567-890
+                        +51 948988737
                     </a>
                 </div>
                 {/* Tarjeta de Ubicación */}
@@ -89,7 +89,7 @@ export default function Contactame() {
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">Ubicación</h3>
                     <p className="text-gray-600 mb-4">Disponible para trabajo remoto</p>
-                    <p className="text-blue-600 font-semibold">Tu Ciudad, Tu País</p>
+                    <p className="text-blue-600 font-semibold">Piura - Talara, Perú</p>
                 </div>
             </div>
             {/* Formulario de Contacto */}
@@ -210,7 +210,7 @@ export default function Contactame() {
                 </h3>
                 <div className="flex justify-center gap-6">
                     <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/juan-sebastian-chinga-palacios/"
                         target="_blank"
                         className="w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center transition-colors"
                     >
@@ -219,7 +219,7 @@ export default function Contactame() {
                         </svg>
                     </a>
                     <a
-                        href="https://github.com"
+                        href="https://github.com/sebastianchinga"
                         target="_blank"
                         className="w-12 h-12 bg-gray-700 hover:bg-gray-800 text-white rounded-full flex items-center justify-center transition-colors"
                     >
