@@ -25,22 +25,22 @@ export const proyectosData: ProyectosType[] = [
         descripcion: 'Sistema de facturación que registra ventas, clientes y totales, con generación de comprobantes y control básico.',
         imagen: 'facturacion-ventas',
         repositorio: 'https://github.com/sebastianchinga/inventario-ventas',
-        url: 'https://task-zend.netlify.app/'
+        url: 'https://facturacion-venta.netlify.app/'
     },
     {
         id: 3,
         titulo: 'Página de bienes raíces',
         descripcion: 'Sitio web inmobiliario para mostrar casas y departamentos, con diseño moderno y enfoque en propiedades de lujo.',
         imagen: 'bienes-raices',
-        repositorio: 'https://github.com/sebastianchinga/inventario-ventas',
-        url: 'https://task-zend.netlify.app/'
+        repositorio: 'https://github.com/sebastianchinga/proyecto-bienes',
+        url: 'https://bienes-raices-chinga.netlify.app/'
     },
     {
         id: 3,
         titulo: 'Consejos Randoms',
         descripcion: 'Aplicación que muestra consejos aleatorios en tiempo real con una interfaz simple, oscura y agradable al usuario.',
         imagen: 'consejos-randoms',
-        repositorio: 'https://github.com/sebastianchinga/inventario-ventas',
-        url: 'https://task-zend.netlify.app/'
+        repositorio: 'https://github.com/sebastianchinga/generador-consejos/tree/master',
+        url: 'https://frolicking-bombolone-69f525.netlify.app/'
     },
 ]
