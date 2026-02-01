@@ -1,6 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navegacion() {
+    const [menu, setMenu] = useState(false);
+
+    const openMenu = () => setMenu(!menu)
+
     return (
         <nav className="bg-white shadow-md sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,10 +25,7 @@ export default function Navegacion() {
                         </Link>
                     </div>
                     {/* Menu Mobile (hamburguesa) */}
-                    <button
-                        className="md:hidden text-gray-700 hover:text-blue-600"
-                        id="menuToggle"
-                    >
+                    <button onClick={openMenu} className="md:hidden text-gray-700 hover:text-blue-600">
                         <svg
                             className="w-6 h-6"
                             fill="none"
@@ -40,25 +42,16 @@ export default function Navegacion() {
                     </button>
                 </div>
                 {/* Menu Mobile Expandido */}
-                <div id="mobileMenu" className="hidden md:hidden pb-4 space-y-2">
-                    <a
-                        href="#inicio"
-                        className="block text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
-                    >
+                <div id="mobileMenu" className={`${!menu && 'hidden'} md:hidden pb-4 space-y-2`}>
+                    <Link to={'/'} className="block text-center text-gray-700 hover:text-blue-600 transition-colors font-medium py-2">
                         Inicio
-                    </a>
-                    <a
-                        href="#proyectos"
-                        className="block text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
-                    >
+                    </Link>
+                    <Link to={'/proyectos'} className="block text-center text-gray-700 hover:text-blue-600 transition-colors font-medium py-2">
                         Proyectos
-                    </a>
-                    <a
-                        href="#contacto"
-                        className="block text-gray-700 hover:text-blue-600 transition-colors font-medium py-2"
-                    >
+                    </Link>
+                    <Link to={'/contactame'} className="block text-center text-gray-700 hover:text-blue-600 transition-colors font-medium py-2">
                         Contáctame
-                    </a>
+                    </Link>
                 </div>
             </div>
         </nav>
