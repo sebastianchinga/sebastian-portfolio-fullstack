@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import type { TecnologiasType } from "../types"
 import { tecnologiasData } from "../data";
 import TecnologiaItem from "../components/TecnologiaItem";
+import { Link } from "react-router-dom";
 
 export default function Home() {
 
@@ -50,9 +51,9 @@ export default function Home() {
                     ))}
                 </div>
                 <div className="flex gap-4 pt-6">
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                    <Link to={'proyectos'} className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
                         Ver Proyectos
-                    </button>
+                    </Link>
                     <button className="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-semibold transition-colors">
                         Descargar CV
                     </button>
